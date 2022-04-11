@@ -1,0 +1,8 @@
+= Part 1
+include::_attributes.adoc[]
+
+[#overview]
+== Authentication Using API Key
+In the part1 of this demo we shall use API_Key as a method of authentication. 
+Proceed to the step by step guide here: 
+xref:02-3scale-installation.adoc[3scale Installation]

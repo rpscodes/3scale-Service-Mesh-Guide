@@ -1,7 +1,7 @@
 name: template-tutorial
-title: Template Tutorial
+title: OpenShift Service Mesh and 3scale API Management Integration
 version: master
 nav:
   - modules/ROOT/nav.adoc
 
-start_page: ROOT:index.adoc
+start_page: ROOT:introduction.adoc
