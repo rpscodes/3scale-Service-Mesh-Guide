@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Deploy Service :: Template Tutorial</title>
-    <link rel="canonical" href="https://redhat-scholars.github.io/course-template/template-tutorial/0200-deploy.html">
+    <title>Introduction :: Template Tutorial</title>
+    <link rel="canonical" href="https://redhat-scholars.github.io/course-template/template-tutorial/introduction.html">
+    <link rel="next" href="#00-introduction.adoc">
     <meta name="generator" content="Antora 3.0.0">
     <link rel="stylesheet" href="../_/css/site.css">
   </head>
@@ -84,95 +85,80 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="introduction.html" class="home-link"></a>
+  <a href="introduction.html" class="home-link is-current"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="introduction.html">OpenShift Service Mesh and 3scale API Management Integration</a></li>
-    <li><a href="0200-deploy.html">Deploy Service</a></li>
+    <li><a href="introduction.html">Introduction</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/rpscodes/3scale-Service-Mesh-Guide/edit/master/documentation/modules/ROOT/pages/0200-deploy.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="https://github.com/rpscodes/3scale-Service-Mesh-Guide/edit/master/documentation/modules/ROOT/pages/introduction.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
 <article class="doc">
-<h1 class="page">Deploy Service</h1>
-<div class="sect1">
-<h2 id="service"><a class="anchor" href="#service"></a>The Service</h2>
+<h1 class="page">Introduction</h1>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>The code:</p>
+<p>This lab provides instructions for running the OpenShift Service Mesh and 3scale API Management Integration demo.</p>
 </div>
-<div class="listingblock lines_7 console-input">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class Main {
-
-    public static void main(String[] args) {
-
-    }
-
-}
-
-./mvnw compile</code></pre>
-</div>
+<div class="paragraph">
+<p>Audience: API Owner, Product Manager, Developers, Architects</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="package"><a class="anchor" href="#package"></a>Packaging the Service</h2>
+<h2 id="Overview"><a class="anchor" href="#Overview"></a>Overview</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You can package the next bash script:</p>
+<p>In a Micro Services Architecture (MSA), there are different stakeholders for API Management and Service Mesh capabilities. Service Mesh provides observability, traceability, security and control to application develops and dev-ops engineers to monitor intra-service communications.</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">#!/bin/sh
-echo "Hello World"</code></pre>
+<div class="paragraph">
+<p>API management provides API providers and business owners ability to provide business API capabilities like security, rate limiting, billing and developer ecosystem.</p>
 </div>
+<div class="paragraph">
+<p>This <a href="https://www.redhat.com/rhdc/managed-files/cl-service-mesh-and-api-management-e-book-f28474-202104-en.pdf" target="_blank" rel="noopener">eBook</a> from Red Hat is a good foundation for understanding the interplay between Service Mesh and API Management in a MSA.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="deploy"><a class="anchor" href="#deploy"></a>Deploy the Service</h2>
+<h2 id="installation"><a class="anchor" href="#installation"></a>Installation Steps</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>And then you can deploy the service and execute commands inside:</p>
+<p>You are provided the following environment on <strong>OpenShift Container Platform 4.9</strong></p>
 </div>
-<div class="paragraph">
-<p>Check that the pod is up and running:</p>
-</div>
-<div class="listingblock lines_space console-input">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Installing 3scale</p>
+</li>
+<li>
+<p>Installating OpenShift Service Mesh</p>
+</li>
+<li>
+<p>Configuring Service Mesh</p>
+</li>
+<li>
+<p>Provisioning the BookInfo product (microservices) behind Istio gateway</p>
+</li>
+<li>
+<p>Configuring 3scale</p>
+</li>
+<li>
+<p>Enable API Management</p>
+<div class="literalblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">kubectl get pods</code></pre>
+<pre>Click here xref:01-path1.adoc[here] to get started</pre>
 </div>
 </div>
-<div class="listingblock console-output">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">NAME                        READY   STATUS    RESTARTS   AGE
-apps   1/1     Running   0          5s</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Then let&#8217;s go into the running pod to execute some commands:</p>
-</div>
-<div class="listingblock console-input">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">kubectl exec -ti apps /bin/bash</code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Change the pod name with your pod name.
-</td>
-</tr>
-</table>
+</li>
+</ol>
 </div>
 </div>
 </div>
+<nav class="pagination">
+  <span class="next"><a href="#00-introduction.adoc">Introduction</a></span>
+</nav>
 </article>
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
