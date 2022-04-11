@@ -4,7 +4,7 @@ runtime:
 site:
   title: Template Tutorial
   url: https://redhat-scholars.github.io/course-template
-  start_page: template-tutorial::index.adoc
+  start_page: template-tutorial::introduction.adoc
 
 content:
   sources:

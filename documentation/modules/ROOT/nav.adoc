@@ -6,11 +6,3 @@
 ** xref:04-provision-bookInfo.adoc[Provision the BookInfo Application]
 ** xref:05-configuring-3scale.adoc[Configuring 3scale]
 ** xref:06-enable-api-mgmt-bookinfo.adoc[Enable API Management]
-
-* xref:0100-setup.adoc[101. Setup]
-** xref:0100-setup.adoc#prerequisite[Prerequisites]
-** xref:0100-setup.adoc#minikube[Setup Minikube]
-
-* xref:0200-deploy.adoc[201. Deploy Service]
-** xref:0200-deploy.adoc#package[Build Service]
-** xref:0200-deploy.adoc#deploy[Deploy Dervice]
