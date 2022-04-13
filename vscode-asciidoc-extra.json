@@ -27,7 +27,6 @@
     "prefix": "input",
     "body": [
       "[.console-input]",
-      
       "[source,${1:bash}]",
       "----",
       "${2:echo \"Hello World\"}",
