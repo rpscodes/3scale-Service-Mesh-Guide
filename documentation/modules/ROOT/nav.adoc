@@ -6,3 +6,8 @@
 ** xref:04-provision-bookInfo.adoc[Provision the BookInfo Application]
 ** xref:05-configuring-3scale.adoc[Configuring 3scale]
 ** xref:06-enable-api-mgmt-bookinfo.adoc[Enable API Management]
+
+* xref:21-path2.adoc[Path2 - Authentication Using OIDC]
+** xref:22-sso-setup.adoc[Red Hat SSO Setup]
+** xref:23-configuring-3scale.adoc[Configuring 3Scale Product for OIDC]
+** xref:24-enable-api-mgmt-bookinfo.adoc[Enable API Management for bookinfo - OIDC scenario]

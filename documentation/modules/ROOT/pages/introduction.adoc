@@ -15,13 +15,13 @@ This link:https://www.redhat.com/rhdc/managed-files/cl-service-mesh-and-api-mana
 
 [#installation]
 == Installation Steps
-You are provided the following environment on *OpenShift Container Platform 4.9*
+You are provided with an *OpenShift Container Platform 4.9* environment and will perform all the below actions as a part of this lab
 
- . Installing 3scale
- . Installating OpenShift Service Mesh
- . Configuring Service Mesh
- . Provisioning the BookInfo product (microservices) behind Istio gateway
- . Configuring 3scale
- . Enable API Management
+. Installing 3scale
+. Installing OpenShift Service Mesh
+. Configuring Service Mesh
+. Provisioning the BookInfo product (microservices) behind Istio gateway
+. Configuring 3scale
+. Enabling API Management
 
- Click here xref:01-path1.adoc[here] to get started
+Click xref:01-path1.adoc[here] to get started

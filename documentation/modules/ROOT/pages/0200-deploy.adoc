@@ -24,7 +24,7 @@ public class Main {
 [#package]
 == Packaging the Service
 
-You can package the next bash script:
+You can package the next bash script: 
 
 [source,bash,subs="+macros,+attributes"]
 ----
@@ -41,3 +41,4 @@ And then you can deploy the service and execute commands inside:
 include::partial$exec_pod.adoc[]
 
 :!podname:
+

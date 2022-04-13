@@ -16,7 +16,7 @@ A 3scale product is a customer facing API. Products facilitate the creation of s
 https://3scale-admin.{cluster wildcard url}
 ----
 
-. You can retrieve the login credentials using the Console UI. Select 3scale project and Navigate to Developer > Secrets and search for *system-seed*
+. You can retrieve the login credentials using the OpenShift Console UI. Select 3scale project and Navigate to Developer > Secrets and search for *system-seed*
 +
 image::seed-nav.png[]
 
