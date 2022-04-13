@@ -1,4 +1,4 @@
-* xref:00-introduction.adoc[Introduction]
+* xref:introduction.adoc[Introduction]
 
 * xref:01-path1.adoc[Path1 - Authentication Using API Key]
 ** xref:02-3scale-installation.adoc[3scale Installation]
