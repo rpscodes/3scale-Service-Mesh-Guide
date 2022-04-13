@@ -248,7 +248,25 @@ spec:
 </div>
 </li>
 <li>
-<p>The service token wil enable the permission for service mesh to be able to access a particular 3scale product. Use 3scale admin access token along with the 3scale product ID from the 3scale product configuration earlier and run the following command with values replaced to obtain the Service token. Do not forget to Replace the <strong>cluster wildcard url</strong>:</p>
+<p>The service token wil enable the permission for service mesh to be able to access a particular 3scale product. . The service token wil enable the permission for service mesh to be able to access a particular 3scale product. From the 3scale admin-portal navigate to  Account Settings &gt; Personal &gt; Tokens and Copy the Service Token of the product we created earlier</p>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="service-token-ui-oidc.png" alt="service token ui oidc">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Alternatively you can use 3scale admin access token along with the 3scale product ID from the 3scale product configuration earlier and run the following command with values replaced to obtain the Service token. Do not forget to Replace the <strong>cluster wildcard url</strong>:</p>
+</div>
+<div class="paragraph">
+<p>+</p>
+</div>
 <div class="listingblock lines_7 console-input">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">curl <a href="https://3scale-admin.{cluster" class="bare">https://3scale-admin.{cluster</a> wildcard url}/admin/api/services/{product id}/proxy/configs/production/latest.json?access_token={access token} | jq '.proxy_config.content.backend_authentication_value'</code></pre>
@@ -264,6 +282,10 @@ spec:
 </div>
 <div class="paragraph">
 <p>Copy and note down the Service Access Token obtained</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </li>
 <li>
